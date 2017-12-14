@@ -3,11 +3,22 @@
     <h1>{{ msg }}</h1>
     <list-selects>
     </list-selects>
+
+    <div class="test-share-template">
+      <h4>
+        Share template
+      </h4>
+      <base-component></base-component>
+      <hr>
+      <new-component></new-component>
+    </div>
   </div>
 </template>
 
 <script>
 import ListSelects from './ListSelects'
+import BaseComponent from './BaseComponent'
+import NewComponent from './NewComponent'
 
 export default {
   name: 'HelloWorld',
@@ -17,7 +28,9 @@ export default {
     }
   },
   components: {
-    ListSelects
+    ListSelects,
+    BaseComponent,
+    NewComponent
   }
 }
 </script>
