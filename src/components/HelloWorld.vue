@@ -6,11 +6,19 @@
 
     <div class="test-share-template">
       <h4>
-        Share template
+        Shared template with extend
       </h4>
       <base-component></base-component>
       <hr>
       <new-component></new-component>
+    </div>
+
+    <div>
+      <h4>
+        Shared template with HTML loader
+      </h4>
+      <shared-template-one></shared-template-one>
+      <shared-template-two></shared-template-two>
     </div>
   </div>
 </template>
@@ -19,6 +27,8 @@
 import ListSelects from './ListSelects'
 import BaseComponent from './BaseComponent'
 import NewComponent from './NewComponent'
+import sharedTemplateOne from './sharedTemplateOne'
+import sharedTemplateTwo from './sharedTemplateTwo'
 
 export default {
   name: 'HelloWorld',
@@ -30,7 +40,9 @@ export default {
   components: {
     ListSelects,
     BaseComponent,
-    NewComponent
+    NewComponent,
+    sharedTemplateOne,
+    sharedTemplateTwo
   }
 }
 </script>
