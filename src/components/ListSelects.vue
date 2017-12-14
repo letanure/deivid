@@ -1,14 +1,14 @@
 <template>
   <div class="childSelects">
     <h1>List selects</h1>
-    <template v-for="(item, index) in lista">
+    <div v-for="(item, index) in lista" :key="item.id">
       <div>
         <span>
           {{ item.label }}
         </span>
         <child-selects @remove="removeOnParent(index)"></child-selects>
       </div>
-    </template>
+    </div>
     <button @click="addItem()" >
       Add item child
     </button>
@@ -30,6 +30,7 @@ export default {
     addItem () {
       this.count++
       this.lista.push({
+        id: this.count,
         label: `item ${this.count}`
       })
     },

@@ -1,10 +1,10 @@
 <template>
   <div class="childSelects">
-    <select name="" id="">
+    <select name="aaa" id="">
       <option value="">childSelects 1</option>
       <option value="">childSelects 2</option>
     </select>
-    <select name="" id="">
+    <select name="bbb" id="">
       <option value="">childSelects 3</option>
       <option value="">childSelects 4</option>
     </select>
